@@ -20,17 +20,21 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Windows 10 (21H2)
 - Ubuntu Server 20.04
 
-<h2>High-Level Steps</h2>
-
 <h2>Part 1: Azure Resource Creation and Network Configuration</h2>
 
-- Created a Resource Group in Microsoft Azure to logically organize and manage related resources within a single deployment environment.
+- Create a Resource Group in Microsoft Azure make sure it is assigned to the designated subscription as well as the same region as our virtual machine we will be creating.
+<img width="1087" height="620" alt="12335" src="https://github.com/user-attachments/assets/613f143f-54e2-409e-9308-6609f8318efc" />
 
 - Deployed a Windows 10 Virtual Machine (VM) within the newly created Resource Group to serve as a client or administrative host.
+<img width="1617" height="455" alt="6666666" src="https://github.com/user-attachments/assets/0058a52b-7ceb-42f9-8ede-b71ffad51ae1" />
 
-- Configured a new Virtual Network (VNet) and Subnet during the Windows VM setup to establish secure network segmentation and communication pathways.
 
 - Provisioned a Linux (Ubuntu) Virtual Machine (VM) using the same Resource Group and Virtual Network for cross-platform connectivity and testing.
+<img width="1101" height="920" alt="777777" src="https://github.com/user-attachments/assets/27d25cd0-4980-4b5e-8943-5e7e2849f24b" />
+
+- Configured a new Virtual Network (VNet) and Subnet during the Windows VM setup to establish secure network segmentation and communication pathways.
+<img width="1207" height="781" alt="88888" src="https://github.com/user-attachments/assets/b0f4825e-64db-48c6-b540-f15303773381" />
+<img width="1181" height="843" alt="99999" src="https://github.com/user-attachments/assets/b00e5baa-4a89-49bd-a6c3-51a7b5d1c613" />
 
 - Utilized Azure Network Watcher to analyze and visualize the Virtual Network topology, verifying connections and network configurations between VMs.
 
