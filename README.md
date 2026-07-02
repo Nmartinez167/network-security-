@@ -36,18 +36,27 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img width="1207" height="781" alt="88888" src="https://github.com/user-attachments/assets/b0f4825e-64db-48c6-b540-f15303773381" />
 <img width="1181" height="843" alt="99999" src="https://github.com/user-attachments/assets/b00e5baa-4a89-49bd-a6c3-51a7b5d1c613" />
 
-- Utilized Azure Network Watcher to analyze and visualize the Virtual Network topology, verifying connections and network configurations between VMs.
 
+<h2>Part 2: Network Connectivity Testing and Traffic Analysis</h2
 
-<h2>Part 2: Network Connectivity Testing and Traffic Analysis</h2>
+- Now we connect to the Windows 10 Virtual Machine via Remote Desktop to perform network monitoring and diagnostic tasks we do that by taking the I.P adress from the azure portal like so .
+- <img width="1877" height="555" alt="dayy66666" src="https://github.com/user-attachments/assets/ce9955b5-7c93-4834-8816-f4252439276d" />
+<img width="1827" height="621" alt="dayyyyy77777" src="https://github.com/user-attachments/assets/78e8e87f-af18-430e-a2f3-24b52e51a2cd" />
 
-- Connected to the Windows 10 Virtual Machine via Remote Desktop to perform network monitoring and diagnostic tasks.
+- Install and configure Wireshark within the Windows VM to capture and analyze network packets in real time.
+  
+- <img width="950" height="685" alt="Screenshot 2026-07-02 152416" src="https://github.com/user-attachments/assets/4f4e1f72-1341-4e56-922d-c2a8946c3111" />
 
-- Installed and configured Wireshark within the Windows VM to capture and analyze network packets in real time.
+After starting wireshark we can observe all the traffic on the backend of this virtual machine.
+<img width="1918" height="986" alt="Screenshot 2026-07-02 153412" src="https://github.com/user-attachments/assets/de9f7abc-ce63-4a39-a8fa-1820d12b1c01" />
+
 
 - Applied ICMP filters in Wireshark to isolate and monitor ping traffic between virtual machines and external networks.
 
-- Retrieved the private IP address of the Ubuntu VM and conducted ping tests from the Windows VM to verify internal network connectivity.
+- <img width="1939" height="1022" alt="Screenshot 2026-07-02 154001" src="https://github.com/user-attachments/assets/2193adab-95a0-4bb5-8f46-1776736fa7a0" />
+
+
+- Retrieved the private IP address of the Ubuntu VM used remote desktop to connect to it and conducted ping tests from the Windows VM to verify internal network connectivity.
 
 - Observed ICMP request and reply packets in Wireshark, confirming successful communication between the Windows and Ubuntu VMs.
 
