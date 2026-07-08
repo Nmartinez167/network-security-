@@ -72,9 +72,11 @@ After starting wireshark we can observe all the traffic on the backend of this v
   -Now we can see the request has timed out due to our new inbound rule we set through the azure portal settings.
 <img width="1482" height="1016" alt="gggggg" src="https://github.com/user-attachments/assets/e95aca75-6072-4a57-ae4b-6a12bdc2ddf5" />
 
-- Re-enabled inbound ICMP traffic within the NSG to restore network connectivity and confirmed successful packet transmission in Wireshark.
+- Re-enabled inbound ICMP traffic within the NSG by simply deletting the rule we set earlier to restore network connectivity and confirmed successful packet transmission in Wireshark.<img width="1953" height="982" alt="sssss" src="https://github.com/user-attachments/assets/a8e0ca03-ac71-4785-84a5-3c6d0add7c80" />
 
-- Terminated the continuous ping process upon successful validation of NSG rule enforcement and network functionality.
+-Here we can see that we are once again getting a reply from our linux VM
+<img width="1918" height="806" alt="kkkkkk" src="https://github.com/user-attachments/assets/6c10e281-9f32-4afe-a9d9-5390cbd7abab" />
+
  <h2>Part 3: Secure Shell (SSH) Traffic Monitoring</h2>
 
 - Configured Wireshark filters to capture and analyze SSH (Secure Shell) traffic between virtual machines.
@@ -111,23 +113,4 @@ After starting wireshark we can observe all the traffic on the backend of this v
 
 - Analyzed RDP behavior showing consistent data transmission to maintain session connectivity and provide real-time screen updates, even during idle periods.
 
-<h2>Conclusion</h2>
 
-
-- Azure Virtual Network Setup and Network Traffic Analysis Project
-
-- Provisioned and configured Azure infrastructure, including a Resource Group, Windows 10 and Linux (Ubuntu) Virtual Machines, Virtual Network (VNet), and Subnets to establish a multi-OS cloud environment.
-
-- Utilized Azure Network Watcher to visualize and validate network topology and connectivity between deployed resources.
-
-- Performed network diagnostics and traffic capture by connecting to the Windows VM via Remote Desktop and using Wireshark to analyze key network protocols.
-
-- Captured and analyzed ICMP traffic to verify internal and external connectivity, and demonstrated traffic control by modifying Network Security Group (NSG) rules to block and unblock ICMP packets.
-
-- Monitored SSH traffic to confirm secure remote shell connections and encrypted packet exchange between Windows and Ubuntu VMs.
-
-- Captured DHCP traffic during IP address renewal processes to ensure proper network configuration and lease management.
-
-- Analyzed DNS queries and responses by resolving domain names with nslookup and verifying DNS traffic flow within the network.
-
-- Observed continuous RDP traffic to understand how Remote Desktop Protocol maintains active sessions through constant data transmission, even during idle periods.
