@@ -56,18 +56,21 @@ After starting wireshark we can observe all the traffic on the backend of this v
 - <img width="1939" height="1022" alt="Screenshot 2026-07-02 154001" src="https://github.com/user-attachments/assets/2193adab-95a0-4bb5-8f46-1776736fa7a0" />
 
 
-- Retrieved the private IP address of the Ubuntu VM used remote desktop to connect to it and conducted ping tests from the Windows VM to verify internal network connectivity.
+- Next we Retrieve the private IP address of the linux VM from our azure portal and conducted ping tests from the Windows VM to verify internal network connectivity by opening up windows powershell and using the ping command.
+<img width="1267" height="886" alt="summm" src="https://github.com/user-attachments/assets/72b915d0-426a-4d12-9f4e-dca613e0e8dc" />
+<img width="1801" height="997" alt="Screenshot 2026-07-08 134559" src="https://github.com/user-attachments/assets/49ab5b29-1629-4c62-b70d-17e7459978e7" />
 
 - Observed ICMP request and reply packets in Wireshark, confirming successful communication between the Windows and Ubuntu VMs.
 
-- Executed ping commands to a public website (e.g., www.google.com
-) to analyze external network communication and ICMP behavior in Wireshark.
+- Next i Initiated a continuous ping session from the Windows VM to the Ubuntu VM to monitor sustained ICMP traffic.
+- <img width="1805" height="1032" alt="new day" src="https://github.com/user-attachments/assets/788e6f15-7f6c-445a-a228-e14da1f43888" />
 
-- Initiated a continuous ping session from the Windows VM to the Ubuntu VM to monitor sustained ICMP traffic.
 
 - Modified Network Security Group (NSG) rules in Azure to disable inbound ICMP traffic for the Ubuntu VM, demonstrating controlled traffic blocking.
+<img width="1922" height="1012" alt="ttttt" src="https://github.com/user-attachments/assets/33c1c55f-a8bd-42d4-9c62-79553b073e98" />
 
-- Monitored Wireshark and command-line feedback to verify the cessation of ICMP traffic due to NSG restrictions.
+  -Now we can see the request has timed out due to our new inbound rule we set through the azure portal settings.
+<img width="1482" height="1016" alt="gggggg" src="https://github.com/user-attachments/assets/e95aca75-6072-4a57-ae4b-6a12bdc2ddf5" />
 
 - Re-enabled inbound ICMP traffic within the NSG to restore network connectivity and confirmed successful packet transmission in Wireshark.
 
