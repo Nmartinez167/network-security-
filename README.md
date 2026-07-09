@@ -79,11 +79,13 @@ After starting wireshark we can observe all the traffic on the backend of this v
 
  <h2>Part 3: Secure Shell (SSH) Traffic Monitoring</h2>
 
-- Configured Wireshark filters to capture and analyze SSH (Secure Shell) traffic between virtual machines.
+- Configured Wireshark filters to capture and analyze SSH (Secure Shell) traffic between virtual machines we did that by opening up windows powershell and prompting the following command : ssh labuser@<private IP address>
+Type commands (username, pwd, etc) into the linux SSH connection.
+<img width="1530" height="837" alt="lllllllll" src="https://github.com/user-attachments/assets/59769704-3e01-43f0-9160-25687b434326" />
+<img width="1614" height="902" alt="lmllllmk" src="https://github.com/user-attachments/assets/2a76f155-5ca2-480e-a511-f88f853a165d" />
+<img width="1645" height="865" alt="yeeeeerrrrr" src="https://github.com/user-attachments/assets/57e346c6-6dbe-4982-9814-cc3cba6634ca" />
 
-- Established an SSH connection from the Windows 10 VM to the Ubuntu VM using its private IP address to test secure remote access.
 
-- Executed authentication and command-line interactions (e.g., entering username and password) while monitoring encrypted SSH packet exchanges in Wireshark.
 
 - Terminated the SSH session by exiting the terminal, confirming the closure of the secure connection in Wireshark traffic logs.
 
