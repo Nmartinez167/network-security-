@@ -104,10 +104,12 @@ Type commands (username, pwd, etc) into the linux SSH connection.
 
 - Applied Wireshark filters to capture DNS (Domain Name System) query and response traffic.
 
+<img width="1390" height="883" alt="disneyyyy" src="https://github.com/user-attachments/assets/9f7589f0-051b-4077-a9c3-25f44dc2b953" />
+
 - Executed nslookup commands on the Windows 10 VM to resolve domain names such as google.com and disney.com.
 
-- Monitored DNS query and response packets in Wireshark to verify successful domain name resolution and network communication.
-
+<img width="1713" height="946" alt="dassssssssssss" src="https://github.com/user-attachments/assets/a3803c3e-cf5e-4702-9a8e-179e9ff35f09" />
+-
 
 <h2>Part 6: RDP Traffic Monitoring</h2>
 
@@ -116,5 +118,7 @@ Type commands (username, pwd, etc) into the linux SSH connection.
 - Monitored continuous RDP data streams between the local machine and the Windows 10 VM during an active remote session.
 
 - Analyzed RDP behavior showing consistent data transmission to maintain session connectivity and provide real-time screen updates, even during idle periods.
+- 
+<img width="1441" height="918" alt="rdp" src="https://github.com/user-attachments/assets/776342ea-2b2d-421b-9d6b-82e8815c36c1" />
 
 
