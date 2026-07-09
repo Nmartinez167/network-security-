@@ -82,7 +82,9 @@ After starting wireshark we can observe all the traffic on the backend of this v
 - Configured Wireshark filters to capture and analyze SSH (Secure Shell) traffic between virtual machines we did that by opening up windows powershell and prompting the following command : ssh labuser@<private IP address>
 Type commands (username, pwd, etc) into the linux SSH connection.
 <img width="1530" height="837" alt="lllllllll" src="https://github.com/user-attachments/assets/59769704-3e01-43f0-9160-25687b434326" />
+
 <img width="1614" height="902" alt="lmllllmk" src="https://github.com/user-attachments/assets/2a76f155-5ca2-480e-a511-f88f853a165d" />
+
 <img width="1645" height="865" alt="yeeeeerrrrr" src="https://github.com/user-attachments/assets/57e346c6-6dbe-4982-9814-cc3cba6634ca" />
 
 
