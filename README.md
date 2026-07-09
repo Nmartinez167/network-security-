@@ -87,9 +87,9 @@ Type commands (username, pwd, etc) into the linux SSH connection.
 
 <img width="1645" height="865" alt="yeeeeerrrrr" src="https://github.com/user-attachments/assets/57e346c6-6dbe-4982-9814-cc3cba6634ca" />
 
-
-
 - Terminated the SSH session by exiting the terminal, confirming the closure of the secure connection in Wireshark traffic logs.
+  
+<img width="1589" height="849" alt="logout" src="https://github.com/user-attachments/assets/e5cfdb45-3d9e-412c-aa47-75af4bb414c8" />
 
 
 <h2>Part 4: DHCP Traffic Analysis</h2>
