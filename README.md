@@ -86,8 +86,15 @@ After starting wireshark we can observe all the traffic on the backend of this v
 
  <h2>Part 3: Secure Shell (SSH) Traffic Monitoring</h2>
 
-- Configured Wireshark filters to capture and analyze SSH (Secure Shell) traffic between virtual machines we did that by opening up windows powershell and prompting the following command : ssh labuser@<private IP address>
-Type commands (username, pwd, etc) into the linux SSH connection.
+- In the Windows 10 VM, open Wireshark and start a packet capture.
+
+- Filter for SSH traffic in Wireshark.
+
+- Using PowerShell in the Windows 10 VM, SSH into the Ubuntu VM using its private IP address:
+  - `ssh labuser@<private IP address>`
+- Type commands (e.g., username, password) in the Linux SSH session and observe SSH traffic in Wireshark.
+- Exit the SSH connection by typing `exit` and pressing [Enter].
+
 <img width="50%" height="50%" alt="lllllllll" src="https://github.com/user-attachments/assets/59769704-3e01-43f0-9160-25687b434326" />
 
 <img width="50%" height="50%" alt="lmllllmk" src="https://github.com/user-attachments/assets/2a76f155-5ca2-480e-a511-f88f853a165d" />
@@ -101,15 +108,25 @@ Type commands (username, pwd, etc) into the linux SSH connection.
 
 <h2>Part 4: DHCP Traffic Analysis</h2>
 
-- Applied Wireshark filters to capture and monitor DHCP (Dynamic Host Configuration Protocol) traffic on the network.
+- Back in Wireshark, filter for DHCP traffic.
+  
+- In the Windows 10 VM, attempt to issue a new IP address using the Command Line:
+  - `ipconfig /renew`
+- Observe DHCP traffic appearing in Wireshark.
 
-- Executed the ipconfig /renew command on the Windows 10 VM to request a new IP address from the DHCP server.
+<img width="737" alt="Screenshot 2025-01-23 at 8 53 19 PM" src="https://github.com/user-attachments/assets/d1918c31-508f-4f35-b7c5-f179827af4f1" />
+<img width="910" alt="Screenshot 2025-01-23 at 8 53 42 PM" src="https://github.com/user-attachments/assets/e4daa4b5-fff0-4e7f-9738-6feecbb805cf" />
 
-- Observed and analyzed DHCP negotiation packets in Wireshark, verifying communication between the VM and the DHCP server during IP lease renewal.
 
 <h2>Part 5: DNS Traffic Capture and Analysis</h2>
+- Back in Wireshark, filter for DNS traffic.
 
-- Applied Wireshark filters to capture DNS (Domain Name System) query and response traffic.
+- In the Windows 10 VM, use `nslookup` to resolve the IP addresses of `google.com` and `disney.com`:
+  - `nslookup google.com`
+  - `nslookup disney.com`
+- Observe DNS traffic in Wireshark.
+
+
 
 <img width="50%" height="50%" alt="disneyyyy" src="https://github.com/user-attachments/assets/9f7589f0-051b-4077-a9c3-25f44dc2b953" />
 
